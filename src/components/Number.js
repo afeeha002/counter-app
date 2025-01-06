@@ -19,10 +19,11 @@ const Number = () => {
         setStep(1);
     };
     const stepChange = (steps) => {
-        const value = parseInt(steps.target.value, 10);
+        const value = parseInt(steps.target.value);
+        console.log(value)
+
+        const setStep = 0 ;
         setStep(isNaN(value) ? 1 : value);
-
-
     }
 
     return (
